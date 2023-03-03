@@ -1,71 +1,63 @@
 ---
-title: Sample Post
 layout: post
-post-image: "https://raw.githubusercontent.com/thedevslot/WhatATheme/master/assets/images/SamplePost.png?token=AHMQUEPC4IFADOF5VG4QVN26Z64GG"
-description: A sample post to show how the content will look and how will different
-  headlines, quotes and codes will be represented.
-tags:
-- sample
-- post
-- test
+title: Sample Post
+post-image: /assets/images/figs-10-15/titlepic.png
 ---
 
-This post will show you how the content will look like in the post pages and how the headlines, quotes and quotes will be represented. Jekyll is mainly used to write simple markdown and after that it renders out a static pages, so you need to know the basics of writing markdown for that.
-For more information about writing markdown you can checkout the following markdown cheatsheets:
-* [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
-* [Markdown Guide](https://www.markdownguide.org/cheat-sheet/)
-* [GitHub Flavored Markdown Spec](https://github.github.com/gfm/)
 
----
+Here is a project I did involving the collection of Data via an API for the massive video game DotA 2.
 
-# This is the h1 text
-## This is the h2 text
-### This is the h3 text
-#### This is the h4 text
-##### This is the h5 text
-###### This is the h6 text
+# Statistics in DotA
 
-**Bold Text in the post will look like:**<br>
-**This text is Bold**
+The field of statistics is broad. It is nearly impossible to find a single facet of life that can't have statistical analysis applied to it.
+In my years of studying statistical analysis, I have also spent a fair amount of time playing a video game known as Defense of the Ancients 2, or DotA 2.
 
-**Italic Text in the post will look like:**<br>
-*This text is Italic*
+This game features a ton, so I wont go into detail, but the basic premise is a 5 VS 5 battle arena. 5 real people play as one of over 100 unique heroes vs a team of 5 other real people with their respective heroes.
 
-> Quotes on your post will look like this
+The goal? Destroy the enemies base and their Ancient, a structure that gives them their power.
 
-`Codes on your post will look like this`
+![dotaart](/assets/images/figs-10-15/dotaexample.png)
 
-**Link in the post will look like:**<br>
-[This is a link](#)
+With so many variables and variations possible, I thought it would be a fun project to do a bit of analysis on my personal data. I have played thousands of games over the years. That is a lot of Data that I can perform analysis on.
 
-**Bullet list in the post will look like:**
-* Item 1
-* Item 2
-* Item 3
-* Item 4
-* Item 5
+This is made possible with [OpenDota](opendota.com). Using the API function, I am able to get all my personal data from the beginning of when I started to play.
 
-**Number list in the post will look like:**
-1. Item 1
-2. Item 2
-3. Item 3
-4. Item 4
-5. Item 5
+# How I did it
 
-**Images in the post will look like:**<br>
-![Test Image](C:/Users/John Black/Documents/GitHub/WhatATheme/assets/images/1280x720%20Placeholder.png)
+I start by importing Pandas and requests. The requests package simplifies working with https requests. The resulting files can then be read into pandas DataFrames with the **pandas.read_json()** function.
 
-**Normal text in the post will look like**<br>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id finibus nisl. Etiam in hendrerit est. Nulla non erat ac lectus interdum lobortis. Vestibulum at mi ex. Mauris nisl mi, venenatis et feugiat nec, finibus porttitor velit. Suspendisse tincidunt lobortis leo, quis tristique tellus iaculis quis. Donec eleifend pulvinar gravida. Proin non lorem eros. Donec sit amet finibus ex, eget vestibulum nunc. Ut ut enim id purus porttitor tristique. Vivamus tincidunt eleifend hendrerit. Proin metus felis, ultrices vel dui in, porta dapibus dui. Sed sagittis ex vitae dui tristique dignissim. Cras vel leo ipsum.
+The data we requested is in Json form, which is similar to a dictionary. Pandas included function parses through it and makes a tidy DataFrame from it.
 
-Aenean ac neque et risus mattis accumsan. Sed ac tellus molestie, lacinia ante sit amet, convallis felis. Maecenas aliquet lectus nec euismod auctor. Donec finibus pellentesque tortor, ac efficitur metus suscipit non. Proin diam orci, blandit quis malesuada ac, efficitur a nisl. Mauris eleifend consequat blandit. Sed egestas quam et orci gravida, non euismod metus scelerisque. Curabitur venenatis pellentesque erat commodo pharetra. Fusce id ante nec ipsum fringilla auctor. In justo quam, feugiat placerat eleifend dapibus, luctus et quam. Fusce facilisis erat ut odio convallis viverra et id mauris. Sed vehicula tempus consectetur. Aliquam pharetra, purus non egestas tristique, tellus massa fringilla est, id sagittis tellus urna non mauris. Suspendisse fringilla, velit nec blandit facilisis, ligula ante imperdiet est, et placerat magna sem quis tortor.
 
-Vestibulum vitae fermentum velit, rhoncus egestas orci. Nulla at purus ut orci posuere vulputate. In eget leo diam. In congue in diam nec elementum. Suspendisse fringilla ante nulla, eu tristique orci ultrices eget. Aenean non lorem tellus. Vestibulum tempor metus sit amet tellus feugiat, sit amet consequat lacus ultricies.
+```javascript
+import pandas as pd
+import requests
+r = requests.get('https://api.opendota.com/api/players/96974530/matches')
+df = pd.read_json(r.text)
+df
+```
 
-Donec imperdiet, lectus eget congue cursus, dolor enim finibus risus, ut molestie lorem tellus non tortor. Donec quam nibh, molestie in dapibus et, efficitur non tortor. Morbi orci tellus, mollis vel mi vitae, auctor lobortis erat. Ut gravida velit eget ligula lacinia, id rhoncus tellus gravida. Maecenas laoreet rutrum consequat. Suspendisse sed nibh dui. Curabitur dictum euismod mollis. Sed egestas libero libero, eu accumsan augue placerat non. Nunc id condimentum orci. Mauris vitae sollicitudin quam.
+![df1](/assets/images/figs-10-15/df1.png)
 
-**Giphy Gifs will look like:**<br>
-<iframe src="https://giphy.com/embed/ZqlvCTNHpqrio" width="480" height="259" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/laughing-despicable-me-minions-ZqlvCTNHpqrio">via GIPHY</a></p>
+So now we have the raw data from every match I have ever played in. I don't want to dive too deep into what is possible, so why don't I just compare something like how long a match is when compared to the hero I played. I can do this many ways, but I will be making a boxplot of the *duration* column with specific *hero_id* column values.
 
-**YouTUbe Videos will look like:**<br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jTPXwbDtIpA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+I will first make a subset of the data frame with just where hero_id = 18 and 90. These ID numbers represent the Heroes Sven and Keeper of the Light (KotL). Then I will plot the duration of both and compare how long the games lasted when I chose one or the other.
+
+```javascript
+subset = df.loc[df['hero_id'].isin([18, 90])]
+plot = subset.boxplot(column=['duration'], by=['hero_id'])
+plot.set_title('Game Duration Comparison')
+plot.set_xlabel('Sven                                                 KotL')
+plot.set_ylabel('Duration (minutes)')
+plt.show()
+```
+
+![boxplot](/assets/images/figs-10-15/boxplot.png)
+
+We can see that there is not much difference between the two, but there is a slight increase in duration when I choose KotL compared to when I choose Sven. But this is just one very simple analysis you can do. OpenDota allows for deep analysis of many variables, and as a statistician who loves the game I want to be able to better understand how I play and improve.
+
+# Conclusion
+
+There are a ton of other things you can perform data analysis on, and it helps when you do it with something you love! I would suggest you find something that means a lot to you that you can perform some form of statistical analysis on to better understand not only what you love, but how statistics is used all around us to make connections!
+
+If you want to learn more about the game, go to the [DotA 2 website](dota2.com/home)
