@@ -12,7 +12,9 @@ tags:
 - Movies
 ---
 
-This is one of my favorite projects I worked on while in college! It may not be the neatest, but it shows some of my skills working with Python to clean and prepare data with the Pandas and Numpy packages, as well as use some machine learning capabilities using the sklearn package.
+This is one of my favorite projects I worked on while in college! It may not be the neatest, but it shows some of my skills working with Python to clean and prepare data with the Pandas and Numpy packages, as well as use some machine learning capabilities using the sklearn package. 
+
+Note : While I had a large hand in this project, this was a collaborative effort between two classmates and myself. 
 
 
 # Film Ratings
@@ -125,7 +127,7 @@ print(np.mean(MSE_dt)*-1)
 
 240.77650113730147
 ```
-Here we have Lasso performing the best with a mean squared error of aroudn 154. 
+Here we have Lasso performing the best with a mean squared error of around 154. 
 
 ```
 # Cross Validation score for Root Mean Squared Error
