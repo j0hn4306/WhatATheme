@@ -1,3 +1,20 @@
+---
+layout: post
+post-image: "/assets/images/filmrating/filmreel.png"
+description: Can we use other metrics to try and predict a movie's metascore?
+title: Film Ratings
+tags: 
+- Python
+- Pandas
+- Numpy
+- Seaborn
+- sklearn
+- Movies
+---
+
+This is one of my favorite projects I worked on while in college! It may not be the neatest, but it shows some of my skills working with Python to clean and prepare data with the Pandas and Numpy packages, as well as use some machine learning capabilities using the sklearn package.
+
+
 # Film Ratings
 
 ## Stat 426 Final Project
