@@ -1,6 +1,6 @@
 ---
 layout: post
-post-image: "/assets/images/filmrating/filmreel.png"
+post-image: "/assets/images/filmrating/Filmreel.png"
 description: Can we use other metrics to try and predict a movie's metascore?
 title: Film Ratings
 tags: 
