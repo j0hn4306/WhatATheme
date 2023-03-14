@@ -11,6 +11,7 @@ tags:
 - sklearn
 - Movies
 ---
+{% include embed-audio.html src="/assets/audio/corridoroftime.mp3" %}
 
 This is one of my favorite projects I worked on while in college! It may not be the neatest, but it shows some of my skills working with Python to clean and prepare data with the Pandas and Numpy packages, as well as use some machine learning capabilities using the sklearn package. 
 
@@ -212,5 +213,3 @@ In all of the models, we were able to make a close prediction. the Linear Regres
 
 We did not have the capability to test all factors though. In future analysis, we would hope to include important features such as Actors, Directors, and Screenwriters to better predict how a movie will perform critically.
 
-
-{% include embed-audio.html src="/assets/audio/corridoroftime.mp3" %}
