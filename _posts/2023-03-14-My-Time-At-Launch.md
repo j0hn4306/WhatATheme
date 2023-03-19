@@ -27,7 +27,7 @@ As an Intern, I worked directly under Jared Endicott, the Advanced Analytics Man
 
 My mentorship was mixed between independent learning and certification preparation, and duties to help other members of the analytics team with their projects. The main tool I was learning and using was Microsoft Power BI
 
-![PowerBI](/assets/images/launch/powerbi.PNG)
+![PowerBI](/assets/images/launch/powerbi.png)
 
 ### Power BI
 Microsoft Power BI is a powerful data visualization tool. Even with the training I have had and am still pursuing, there is still so much potential to be unlocked. You are able to turn data into opportunity by driving better business decisions through the capabilities of Power BI. 
