@@ -43,7 +43,7 @@ disqus-shortname: thedevslot
 # Name of the Author
 author-name: John Black
 # URL for the Image of the Author
-author-image: assets/images/johnprofile.jpg
+author-image: assets/images/johnprofile.png
 # 60 Words About the Author
 author-about: Hi, I'm John Black. I am a data analyst who loves telling stories. I believe that data analysis is more than just crunching numbers - it's about finding the stories hidden within the data and using them to make beter decisions. I believe that by telling these stories, we can make data more accessible and understandable for everyone.
 # URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
