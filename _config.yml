@@ -7,9 +7,9 @@ url: ''
 baseurl: 
 
 # Title of the Site
-title: John Black Blog
+title: John Black Data Analysis
 # Description of the Site
-description: A Blog about John Black and Data Analysis
+description: All about John Black and Data Analysis
 # URL of Image of the Site
 site-image: /WhatATheme/assets/images/meta.jpg
 # Keywords of the Site
@@ -18,7 +18,7 @@ site-keywords: Site, Template, Theme
 favicon-url: 
 
 # URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
-heroimage: https://images.pexels.com/photos/220444/pexels-photo-220444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+heroimage: /WhatATheme/assets/images/analyticsbanner.png
 
 # Social Media and Contact
 # If you don't want to use any icon, you can leave them blank.
@@ -43,9 +43,9 @@ disqus-shortname: thedevslot
 # Name of the Author
 author-name: John Black
 # URL for the Image of the Author
-author-image: https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png
+author-image: /WhatATheme/assets/images/johnprofile.png
 # 60 Words About the Author
-author-about: John Black is a Data Analyst who graduated in Statistics from Brigham Young University. He loves to delve into the data and tell the real story behind it. Besides wotking with data, John also enjoys spending time with family and playing online games with his friends.
+author-about: Hi, I'm John Black. I am a data analyst who loves telling stories. I believe that data analysis is more than just crunching numbers - it's about finding the stories hidden within the data and using them to make beter decisions. I believe that by telling these stories, we can make data more accessible and understandable for everyone.
 # URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
 author-url: https://github.com/j0hn4306
 
