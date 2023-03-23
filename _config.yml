@@ -46,6 +46,8 @@ author-name: John Black
 author-image: /assets/images/johnprofile.png
 # 60 Words About the Author
 author-about: Hi, I'm John Black! Im glad you found your way here today! I am a data analyst who loves telling stories. I believe that data analysis is more than just crunching numbers — it's about finding the stories hidden within the data and using them to make better decisions. I believe that by telling these stories, we can make data more accessible and understandable for everyone.
+
+This website acts as both a portfolio of my work and experience, as well as a chance for me to learn a little about HTML. 
 # URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
 author-url: https://github.com/j0hn4306
 
